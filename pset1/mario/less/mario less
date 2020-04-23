@@ -1,0 +1,34 @@
+#include <cs50.h>
+#include <stdio.h>
+void blank(void);
+void block(void);
+int main(void)
+{
+int n;   
+    n=get_int("n:\n");
+    
+for (int i=0;i<=n;i++)
+{
+    for (int j=i;j<=n;j++)
+    {
+        blank();
+    }
+    for (int k=0;k<i;k++)
+        block();   
+        printf("\n"); 
+}
+
+      
+}
+
+
+
+
+void blank(void)
+{
+    printf(" ");
+}
+void block (void)
+{
+    printf("#");
+}
